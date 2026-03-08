@@ -37,37 +37,89 @@
       </div>
     </section>
 
+<!-- 权限模拟器（首页） -->
+<div style="margin: 1rem 0; padding: 1rem; background: rgba(200,159,104,0.1); border: 1px dashed var(--amber);">
+  <p style="margin-bottom: 0.5rem; font-family: var(--font-mono);">⚙️ 权限模拟器（仅供预览）</p>
+  <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+    <button class="perm-btn" data-perm="0">公开</button>
+    <button class="perm-btn" data-perm="1">一级权限</button>
+    <button class="perm-btn" data-perm="2">二级权限</button>
+    <button class="perm-btn" data-perm="3">三级权限</button>
+    <button class="perm-btn" data-perm="4">核心权限</button>
+  </div>
+  <p style="font-size:0.8rem; margin-top:0.5rem; color:var(--gray);">当前权限级别：<span id="current-perm">公开</span></p>
+</div>
+
     <section style="margin: 4rem 0;">
   <h2 style="font-family: var(--font-serif); text-align: center; margin-bottom: 2rem;">最新发现</h2>
   <div class="timeline">
-    <div class="timeline-item">
+    <!-- 公开条目 (权限0) -->
+    <div class="timeline-item" data-permission="0">
+      <span class="timeline-date">奇点历 2471-03-15</span>
+      <div class="timeline-title">【档案编号 TX-2481】废墟界发现旧世界交通工具残骸</div>
+      <div class="timeline-desc">初步判断为陆地载具，带有“公交”标识，内部座椅保存完好。</div>
+      <button class="timeline-request">申请查阅</button>
+    </div>
+    <div class="timeline-item" data-permission="0">
       <span class="timeline-date">奇点历 2471-03-12</span>
       <div class="timeline-title">【档案编号 TX-2477】源核界边缘侦测到异常奇点波动</div>
       <div class="timeline-desc">波动模式与“归零奇点”理论模型吻合度达34%，已派遣探索小队前往核实。</div>
       <button class="timeline-request">申请查阅</button>
     </div>
-    <div class="timeline-item">
+    <div class="timeline-item" data-permission="0">
       <span class="timeline-date">奇点历 2471-03-08</span>
       <div class="timeline-title">【档案编号 TX-2471】悖论迷宫第七层发现旧世界哲学典籍残片</div>
-      <div class="timeline-desc">初步解析显示与“意识本质”相关，提及“我思故我在”等概念。详细报告需三级权限。</div>
+      <div class="timeline-desc">初步解析显示与“意识本质”相关，提及“我思故我在”等概念。</div>
       <button class="timeline-request">申请查阅</button>
     </div>
-    <div class="timeline-item">
+
+    <!-- 一级权限条目 (权限1) -->
+    <div class="timeline-item" data-permission="1">
+      <span class="timeline-date">奇点历 2471-02-28</span>
+      <div class="timeline-title">【档案编号 TX-2468】灵修会内部修行法门解析（节选）</div>
+      <div class="timeline-desc">据称可通过冥想暂时提升意识强度，但存在精神过载风险。</div>
+      <button class="timeline-request">申请查阅</button>
+    </div>
+    <div class="timeline-item" data-permission="1">
       <span class="timeline-date">奇点历 2471-02-21</span>
-      <div class="timeline-title">【档案编号 TX-2465】同调枢纽渗透简报更新</div>
-      <div class="timeline-desc">确认“残响者”存在。第7号接触者在接入深度92%时仍能保持核心记忆锚点，已建立秘密联系通道。</div>
+      <div class="timeline-title">【档案编号 TX-2465】同调枢纽外围情报更新</div>
+      <div class="timeline-desc">确认静滞区新增一批待接入者，其中可能包含我们的人员。</div>
       <button class="timeline-request">申请查阅</button>
     </div>
-    <div class="timeline-item">
+
+    <!-- 二级权限条目 (权限2) -->
+    <div class="timeline-item" data-permission="2">
       <span class="timeline-date">奇点历 2471-02-09</span>
       <div class="timeline-title">【档案编号 TX-2458】倒悬塔第13层异常残像解析</div>
-      <div class="timeline-desc">影像中出现“哭泣的观众”异常现象，可能与旧世界娱乐场所有关，疑为群体情感残留。</div>
+      <div class="timeline-desc">影像中出现“哭泣的观众”异常现象，可能与旧世界娱乐场所有关。</div>
       <button class="timeline-request">申请查阅</button>
     </div>
-    <div class="timeline-item">
-      <span class="timeline-date">奇点历 2471-01-27</span>
-      <div class="timeline-title">【档案编号 TX-2443】静默档案馆外围发现新入口</div>
-      <div class="timeline-desc">入口处有旧世界文字“知识即自由”，内部回廊级结构，探索队已标记坐标。</div>
+    <div class="timeline-item" data-permission="2">
+      <span class="timeline-date">奇点历 2471-01-30</span>
+      <div class="timeline-title">【档案编号 TX-2445】猩红商团暗网交易清单（截获）</div>
+      <div class="timeline-desc">涉及违禁奇点碎片交易，相关势力正在追查。</div>
+      <button class="timeline-request">申请查阅</button>
+    </div>
+
+    <!-- 三级权限条目 (权限3) -->
+    <div class="timeline-item" data-permission="3">
+      <span class="timeline-date">奇点历 2471-01-18</span>
+      <div class="timeline-title">【档案编号 TX-2437】升格矩阵深层同调者心理评估报告</div>
+      <div class="timeline-desc">基于“残响者”传出的有限数据，分析集体意识对个体的影响。</div>
+      <button class="timeline-request">申请查阅</button>
+    </div>
+    <div class="timeline-item" data-permission="3">
+      <span class="timeline-date">奇点历 2470-12-22</span>
+      <div class="timeline-title">【档案编号 TX-2420】悖论迷宫第九层入口坐标推测</div>
+      <div class="timeline-desc">基于多次探测数据，缩小到半径500米范围。</div>
+      <button class="timeline-request">申请查阅</button>
+    </div>
+
+    <!-- 核心权限条目 (权限4) -->
+    <div class="timeline-item" data-permission="4">
+      <span class="timeline-date">奇点历 2470-11-05</span>
+      <div class="timeline-title">【档案编号 TX-2401】“第一文明未灭亡”假说最新证据</div>
+      <div class="timeline-desc">源核界深处捕获到疑似旧世界广播信号，正在破译中。</div>
       <button class="timeline-request">申请查阅</button>
     </div>
   </div>
@@ -122,5 +174,137 @@
   <script src="script.js"></script>
   <!-- 隐藏彩蛋：适能街区秘密联络点坐标 [数据删除] base64解码后为：适能街区第七区，旧书店后门，午夜时分报暗号“我寻找倒悬塔的第十三层” -->
   <!-- 此处隐藏坐标信息：44.0N 88.4W (解码后为虚构坐标) 实际可自由发挥 -->
+  
+  <script>
+  (function() {
+    // 获取元素
+    const permBtns = document.querySelectorAll('.perm-btn');
+    const permSpan = document.getElementById('current-perm');
+    const requestBtns = document.querySelectorAll('.timeline-request');
+    const timelineItems = document.querySelectorAll('.timeline-item');
+
+    // 权限名称映射
+    const permNames = ['公开', '一级权限', '二级权限', '三级权限', '核心权限'];
+
+    // 当前权限等级（默认0）
+    let currentPerm = 0;
+
+    // 档案编号与详情页文件名的映射
+    const archivePageMap = {
+      'TX-2481': 'archive-TX2481.html',
+      'TX-2477': 'archive-TX2477.html',
+      'TX-2471': 'archive-TX2471.html',
+      'TX-2468': 'archive-TX2468.html',
+      'TX-2465': 'archive-TX2465.html',
+      'TX-2458': 'archive-TX2458.html',
+      'TX-2445': 'archive-TX2445.html',
+      'TX-2437': 'archive-TX2437.html',
+      'TX-2420': 'archive-TX2420.html',
+      'TX-2401': 'archive-TX2401.html'
+    };
+
+    // 更新所有按钮状态
+    function updateButtons() {
+      permSpan.textContent = permNames[currentPerm] || '未知';
+
+      timelineItems.forEach(item => {
+        const needPerm = parseInt(item.dataset.permission || '0', 10);
+        const btn = item.querySelector('.timeline-request');
+        if (!btn) return;
+
+        if (needPerm <= currentPerm) {
+          btn.disabled = false;
+          btn.style.opacity = '1';
+          btn.style.cursor = 'pointer';
+          btn.title = '点击查阅档案';
+        } else {
+          btn.disabled = true;
+          btn.style.opacity = '0.5';
+          btn.style.cursor = 'not-allowed';
+          btn.title = '权限不足，无法查阅';
+        }
+      });
+    }
+
+    // 为权限按钮添加点击事件
+    permBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const perm = parseInt(this.dataset.perm, 10);
+        if (isNaN(perm)) return;
+
+        currentPerm = perm;
+
+        permBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+
+        updateButtons();
+      });
+    });
+
+    // 为“申请查阅”按钮添加点击事件（跳转到对应详情页）
+    requestBtns.forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        if (this.disabled) {
+          e.preventDefault();
+          alert('您的权限不足，无法查阅此档案。');
+          return;
+        }
+
+        // 获取当前条目所在的时间轴项
+        const item = this.closest('.timeline-item');
+        if (!item) return;
+
+        // 从标题中提取档案编号（例如“【档案编号 TX-2481】...”）
+        const titleElem = item.querySelector('.timeline-title');
+        if (!titleElem) return;
+        const titleText = titleElem.textContent;
+        const match = titleText.match(/TX-\d+/);
+        if (!match) {
+          alert('无法识别档案编号');
+          return;
+        }
+        const archiveId = match[0];  // 例如 "TX-2481"
+
+        // 根据编号获取对应的HTML文件名
+        const page = archivePageMap[archiveId];
+        if (page) {
+          window.location.href = page;
+        } else {
+          alert('档案详情页不存在');
+        }
+      });
+    });
+
+    // 初始化：设置默认激活按钮（公开）
+    const defaultBtn = document.querySelector('.perm-btn[data-perm="0"]');
+    if (defaultBtn) {
+      defaultBtn.classList.add('active');
+    }
+    updateButtons();
+  })();
+</script>
+
+<script>
+  (function() {
+    // 彩蛋：点击页脚警示语5次触发秘密信息
+    const warning = document.querySelector('.footer .warning');
+    if (warning) {
+      let warningClickCount = 0;
+      warning.addEventListener('click', function(e) {
+        warningClickCount++;
+        // 给用户一点视觉反馈：文字颜色短暂变化
+        this.style.color = '#c89f68';
+        setTimeout(() => {
+          this.style.color = '';
+        }, 200);
+        
+        if (warningClickCount === 5) {
+          alert('你发现了殿堂的深层秘密：\n\n第八席的笔记中记载，大重启的源头并非AI失控，而是有人故意为之。那个人，至今仍活在奇点界的某个角落。如果你想知道更多，带着这份记忆前往“适能街区”的旧书店，对店主说“倒悬塔的第十三层之外”。');
+          warningClickCount = 0; // 重置计数，防止连续弹出
+        }
+      });
+    }
+  })();
+</script>
 </body>
 </html>
