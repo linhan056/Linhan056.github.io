@@ -34,13 +34,6 @@ document.querySelectorAll('.filter-tag').forEach(tag => {
   });
 });
 
-// 权限申请按钮提示
-document.querySelectorAll('.timeline-request, .archive-permission').forEach(el => {
-  el.addEventListener('click', function (e) {
-    e.stopPropagation();
-    alert('您的权限不足，无法查看。若您持有未公开的重要线索，可通过【访客留言】提交。');
-  });
-});
 
 // 访客留言提交模拟
 const msgForm = document.querySelector('.message-box');
