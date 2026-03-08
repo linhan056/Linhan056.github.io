@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>真理殿堂 · 访客留言</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">真理殿堂</a></div>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于</a>
+      <a href="archives.html">探索档案</a>
+      <a href="join.html">加入</a>
+      <a href="contact.html">访客留言</a>
+    </div>
+  </nav>
+
+  <main class="main-container">
+    <h1 style="font-family: var(--font-serif); text-align: center;">未知的线索</h1>
+    <div class="message-box">
+      <p style="font-size: 1.2rem; margin-bottom: 2rem;">你见过什么无法解释的事物？你听说过什么被掩盖的传说？请告诉我们。</p>
+      <textarea placeholder="写下你的记忆、传闻或任何可疑的线索……"></textarea>
+      <button class="btn">提交线索</button>
+      <p class="message-hint">你的记忆，或许就是下一份档案的起点。真理殿堂感谢你的分享。</p>
+    </div>
+
+    <!-- 隐藏入口：连续点击页面角落7次触发彩蛋 -->
+    <div style="height: 50px; width: 50px; position: fixed; bottom: 10px; left: 10px; opacity: 0.01;" id="easter-zone"></div>
+  </main>
+
+  <footer class="footer">
+    <p>真理殿堂 · 成立于大重启纪元元年</p>
+    <p class="warning">“真相可能刺痛，但谎言终将崩塌。”</p>
+  </footer>
+
+  <script>
+    // 彩蛋：连续点击左下角7次弹出暗号输入框
+    let clickCount = 0;
+    const zone = document.getElementById('easter-zone');
+    if (zone) {
+      zone.addEventListener('click', function() {
+        clickCount++;
+        if (clickCount >= 7) {
+          const code = prompt('说出暗号：');
+          if (code === '我寻找倒悬塔的第十三层') {
+            alert('准入。适能街区第七区，旧书店后门，午夜。');
+          } else {
+            alert('暗号错误。');
+          }
+          clickCount = 0;
+        }
+      });
+    }
+  </script>
+  <script src="script.js"></script>
+  <!-- 隐藏彩蛋坐标（base64）：6YCa5Y+25Yy66ZqU5Y2B5Y+3Lem7hOm7hOm7hA== 解码后为“适能街区第七区-旧书店后门” -->
+</body>
+</html>

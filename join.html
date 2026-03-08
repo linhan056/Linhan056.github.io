@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>真理殿堂 · 加入</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">真理殿堂</a></div>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于</a>
+      <a href="archives.html">探索档案</a>
+      <a href="join.html">加入</a>
+      <a href="contact.html">访客留言</a>
+    </div>
+  </nav>
+
+  <main class="main-container">
+    <h1 style="font-family: var(--font-serif);">成为探寻者</h1>
+    <p style="max-width: 600px;">我们寻找这样的人：对真相有不可遏制的渴望，能够承受真相可能带来的痛苦，并具备某一领域的专长。</p>
+
+    <div class="join-steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>提交申请</h3>
+        <p>填写基础信息与专长领域</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>初步筛选</h3>
+        <p>议会下属联络组评估（可能伴随适能街区的秘密观察）</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>试炼委托</h3>
+        <p>完成一项由殿堂指派的、难度适中的探索任务</p>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <h3>入殿仪式</h3>
+        <p>在适能街区某处秘密地点，由一位正式专员引荐，立誓守护真相</p>
+      </div>
+    </div>
+
+    <div style="background: rgba(44,62,80,0.05); padding: 2rem; max-width: 600px; margin: 2rem auto;">
+      <h3>立即申请 (模拟表单)</h3>
+      <form onsubmit="alert('申请已提交（模拟）。议会将在适能街区与你联系。'); return false;">
+        <div style="margin-bottom: 1rem;">
+          <label>代号 / 真名：</label><br>
+          <input type="text" style="width:100%; padding:0.5rem; background:var(--paper); border:1px solid var(--border);">
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <label>专长领域：</label><br>
+          <select style="width:100%; padding:0.5rem; background:var(--paper); border:1px solid var(--border);">
+            <option>解析</option>
+            <option>战斗</option>
+            <option>交涉</option>
+            <option>技术</option>
+            <option>隐匿</option>
+          </select>
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <label>留言（可选）：</label><br>
+          <textarea rows="3" style="width:100%; background:var(--paper); border:1px solid var(--border);"></textarea>
+        </div>
+        <button type="submit" class="btn">提交申请</button>
+      </form>
+    </div>
+
+    <section style="margin-top: 3rem;">
+      <h3>常见问题</h3>
+      <details>
+        <summary style="cursor:pointer; color:var(--deep-blue);">必须常驻吗？</summary>
+        <p>不需要。许多专员以自由身份活动，定期提交报告即可。</p>
+      </details>
+      <details>
+        <summary style="cursor:pointer; color:var(--deep-blue);">如何平衡个人利益与组织目标？</summary>
+        <p>我们鼓励在探寻真相的同时获取合理报酬，但禁止将重要情报私自出售给猩红商团等势力。</p>
+      </details>
+      <details>
+        <summary style="cursor:pointer; color:var(--deep-blue);">失败有惩罚吗？</summary>
+        <p>探索必然伴随风险。只要如实汇报，失败不会被惩罚；但隐瞒或伪造数据将导致除名。</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>真理殿堂 · 成立于大重启纪元元年</p>
+    <p class="warning">“真相可能刺痛，但谎言终将崩塌。”</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

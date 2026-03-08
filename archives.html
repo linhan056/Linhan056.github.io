@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>真理殿堂 · 探索档案</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">真理殿堂</a></div>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于</a>
+      <a href="archives.html">探索档案</a>
+      <a href="join.html">加入</a>
+      <a href="contact.html">访客留言</a>
+    </div>
+  </nav>
+
+  <main class="main-container">
+    <h1 style="font-family: var(--font-serif);">探索档案</h1>
+    <div class="filter-bar">
+      <span class="filter-tag active">全部</span>
+      <span class="filter-tag">遗迹档案</span>
+      <span class="filter-tag">奇点研究</span>
+      <span class="filter-tag">势力分析</span>
+      <span class="filter-tag">旧世界图书馆</span>
+    </div>
+
+    <div class="archives-grid">
+      <!-- 公开档案 -->
+      <div class="archive-card">
+        <div class="archive-meta"><span>遗迹档案</span><span>等级：残响级</span></div>
+        <div class="archive-title">倒悬塔</div>
+        <div class="archive-desc">重力反向区延伸至第27层，第13层残响显示此处曾为旧世界娱乐场所。</div>
+        <div class="archive-permission">权限等级：公开</div>
+      </div>
+      <div class="archive-card">
+        <div class="archive-meta"><span>奇点研究</span><span>显奇点级</span></div>
+        <div class="archive-title">奇点【绝对理性】</div>
+        <div class="archive-desc">目前已追踪到3例觉醒者，共性为情感阈值显著降低。</div>
+        <div class="archive-permission">权限等级：公开</div>
+      </div>
+
+      <!-- 需要权限的档案（模糊效果） -->
+      <div class="archive-card permission-blur">
+        <div class="archive-meta"><span>势力分析</span><span>机密</span></div>
+        <div class="archive-title">同调枢纽渗透简报</div>
+        <div class="archive-desc">确认“残响者”存在。第7号接触者...</div>
+        <div class="permission-label">需二级权限</div>
+      </div>
+      <div class="archive-card permission-blur">
+        <div class="archive-meta"><span>遗迹档案</span><span>回廊级</span></div>
+        <div class="archive-title">静默档案馆深层结构</div>
+        <div class="archive-desc">据传保存着旧世界所有公开出版物...</div>
+        <div class="permission-label">需三级权限</div>
+      </div>
+      <div class="archive-card permission-blur">
+        <div class="archive-meta"><span>奇点研究</span><span>真·奇点</span></div>
+        <div class="archive-title">归零奇点理论溯源</div>
+        <div class="archive-desc">关于虚无之子崇拜的终极力量...</div>
+        <div class="permission-label">需核心权限</div>
+      </div>
+    </div>
+
+    <p style="margin-top: 2rem; font-style: italic; color: var(--gray);">显示 5 条档案（共 247 条）。部分内容需权限解锁。</p>
+  </main>
+
+  <footer class="footer">
+    <p>真理殿堂 · 成立于大重启纪元元年</p>
+    <p class="warning">“真相可能刺痛，但谎言终将崩塌。”</p>
+  </footer>
+  <script src="script.js"></script>
+  <!-- 隐藏信息：访问 archives.html?debug=true 可触发未记录的接口（仅演示） -->
+</body>
+</html>
