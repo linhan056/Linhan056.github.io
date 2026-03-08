@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>真理殿堂 · 奇点收录</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* 针对奇点列表的额外样式 */
+    .singularity-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .singularity-card {
+      background: var(--paper);
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px var(--shadow);
+      transition: transform 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .singularity-card:hover {
+      transform: translateY(-4px);
+    }
+    .singularity-level {
+      display: inline-block;
+      background: var(--deep-blue);
+      color: var(--amber);
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 2px;
+      margin-bottom: 1rem;
+      align-self: flex-start;
+    }
+    .singularity-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .singularity-desc {
+      color: var(--ink);
+      margin: 0.5rem 0 1rem 0;
+      flex: 1;
+    }
+    .btn-detail {
+      background: transparent;
+      border: 1px solid var(--amber);
+      color: var(--deep-blue);
+      padding: 0.5rem 1rem;
+      text-align: center;
+      text-decoration: none;
+      font-family: var(--font-serif);
+      transition: all 0.2s;
+      margin-top: 1rem;
+      align-self: flex-start;
+    }
+    .btn-detail:hover {
+      background: var(--amber);
+      color: var(--paper);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">真理殿堂</a></div>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于</a>
+      <a href="archives.html">探索档案</a>
+      <a href="singularities.html">奇点收录</a>
+      <a href="join.html">加入</a>
+      <a href="contact.html">访客留言</a>
+    </div>
+  </nav>
+
+  <main class="main-container">
+    <h1 style="font-family: var(--font-serif);">奇点收录档案</h1>
+    <div style="height: 4px; width: 80px; background: var(--amber); margin-bottom: 1rem;"></div>
+    <p style="margin-bottom: 2rem; max-width: 800px;">奇点是觉醒者扭曲现实的根源，每一枚奇点都是独特的意志结晶。以下是殿堂收录的部分奇点档案，点击可查看详情。</p>
+
+    <div class="singularity-grid">
+      <!-- 卡片 1：绝对锋刃 -->
+      <div class="singularity-card">
+        <span class="singularity-level">显奇点级</span>
+        <h3>绝对锋刃</h3>
+        <p class="singularity-desc">将意志凝聚为无坚不摧的锋刃，专注越强，锋刃越利。但每一次挥斩都在消耗精神。</p>
+        <a href="singularity-001.html" class="btn-detail">查看详情 →</a>
+      </div>
+
+      <!-- 卡片 2：记忆回响 -->
+      <div class="singularity-card">
+        <span class="singularity-level">微奇点级</span>
+        <h3>记忆回响</h3>
+        <p class="singularity-desc">触碰物体或地点，即可感知其残留的过去片段。代价是每次使用都会失去一段自身记忆。</p>
+        <a href="singularity-002.html" class="btn-detail">查看详情 →</a>
+      </div>
+
+      <!-- 卡片 3：静默领域 -->
+      <div class="singularity-card">
+        <span class="singularity-level">领域奇点级</span>
+        <h3>静默领域</h3>
+        <p class="singularity-desc">展开一片半径十米的领域，压制一切声音、信息传输与奇点技能。领域内唯有纯粹的物理对抗。</p>
+        <a href="singularity-003.html" class="btn-detail">查看详情 →</a>
+      </div>
+    </div>
+
+    <p style="font-style: italic; color: var(--gray); margin-top: 2rem;">收录总数：3 枚（持续更新中）</p>
+  </main>
+
+  <footer class="footer">
+    <p>真理殿堂 · 成立于大重启纪元元年</p>
+    <p class="warning">“真相可能刺痛，但谎言终将崩塌。”</p>
+  </footer>
+
+  <!-- 返回顶部按钮（可选） -->
+  <a href="#" class="back-to-top">↑</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
