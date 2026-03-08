@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+<a href="#" class="back-to-top">↑</a>
 <body>
   <nav class="navbar">
     <div class="logo"><a href="index.html">真理殿堂</a></div>
@@ -29,6 +30,7 @@
       <h2>殿堂起源</h2>
       <p style="font-size: 1.1rem;">大重启后，世界陷入混沌。最初几位觉醒者在废墟界某处废弃档案馆中相遇，发现旧世界的记忆正在被某种力量系统性地抹除。他们立下誓言：无论付出何种代价，都要找回被掩盖的真相。纪元元年，真理殿堂在秘密中成立。</p>
       <p style="margin-top: 1rem;"><em>—— 配图：第一次集会的插画 (手绘风格占位) ——</em></p>
+      <p style="margin-top: 1rem;">据说，第一次集会发生在一座半坍塌的旧世界图书馆内，七位觉醒者围坐在一张布满灰尘的圆桌旁，桌上摊开着他们拼凑出的第一份旧世界地图。他们约定：无论未来如何演变，真相必须被记录、被传承。那间图书馆后来被命名为“初始之室”，至今仍是殿堂最神圣的场所。</p>
     </section>
 
     <section style="margin-bottom: 3rem;">
@@ -50,21 +52,39 @@
     </section>
 
     <section style="margin-bottom: 3rem;">
-      <h2>组织架构</h2>
-      <p>议会七席，各司其职：探索、解析、守护、交涉、文献、技术、传承。</p>
-      <div style="background: rgba(44,62,80,0.05); padding: 1.5rem; margin-top: 1rem;">
-        <pre style="font-family: var(--font-mono);">
-议会
-├─ 探索席 (遗迹发掘)
-├─ 解析席 (数据破译)
-├─ 守护席 (战斗与防卫)
-├─ 交涉席 (对外联络)
-├─ 文献席 (档案管理)
-├─ 技术席 (装备与算力)
-└─ 传承席 (新专员培养)
-        </pre>
-      </div>
-    </section>
+  <h2>组织架构</h2>
+  <p>议会七席，各司其职，共同决策。</p>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
+    <div style="background: rgba(44,62,80,0.05); padding: 1rem; border-left: 4px solid var(--amber);">
+      <h3 style="font-family: var(--font-serif); margin:0 0 0.5rem 0;">探索席</h3>
+      <p style="font-size:0.9rem;">负责遗迹发掘、野外勘探，是殿堂的触角。</p>
+    </div>
+    <div style="background: rgba(44,62,80,0.05); padding: 1rem; border-left: 4px solid var(--amber);">
+      <h3 style="font-family: var(--font-serif); margin:0 0 0.5rem 0;">解析席</h3>
+      <p style="font-size:0.9rem;">破译旧世界文字、数据、图像，还原真相。</p>
+    </div>
+    <div style="background: rgba(44,62,80,0.05); padding: 1rem; border-left: 4px solid var(--amber);">
+      <h3 style="font-family: var(--font-serif); margin:0 0 0.5rem 0;">守护席</h3>
+      <p style="font-size:0.9rem;">战斗与防卫，保护探索小队和档案安全。</p>
+    </div>
+    <div style="background: rgba(44,62,80,0.05); padding: 1rem; border-left: 4px solid var(--amber);">
+      <h3 style="font-family: var(--font-serif); margin:0 0 0.5rem 0;">交涉席</h3>
+      <p style="font-size:0.9rem;">对外联络、情报交换、与议会周旋。</p>
+    </div>
+    <div style="background: rgba(44,62,80,0.05); padding: 1rem; border-left: 4px solid var(--amber);">
+      <h3 style="font-family: var(--font-serif); margin:0 0 0.5rem 0;">文献席</h3>
+      <p style="font-size:0.9rem;">档案管理、分类、保存，殿堂的图书馆。</p>
+    </div>
+    <div style="background: rgba(44,62,80,0.05); padding: 1rem; border-left: 4px solid var(--amber);">
+      <h3 style="font-family: var(--font-serif); margin:0 0 0.5rem 0;">技术席</h3>
+      <p style="font-size:0.9rem;">装备研发、算力支持、信息加密。</p>
+    </div>
+    <div style="background: rgba(44,62,80,0.05); padding: 1rem; border-left: 4px solid var(--amber);">
+      <h3 style="font-family: var(--font-serif); margin:0 0 0.5rem 0;">传承席</h3>
+      <p style="font-size:0.9rem;">培养新专员，传递知识与信条。</p>
+    </div>
+  </div>
+</section>
 
     <section>
       <h2>编年史</h2>
@@ -86,6 +106,18 @@
           <div class="timeline-title">第三次遗迹战争：于倒悬塔击退升格矩阵进攻</div>
         </div>
       </div>
+      <div class="timeline-item">
+  <span class="timeline-date">纪元311年</span>
+  <div class="timeline-title">与守恒者议会达成“适能街区常驻协议”</div>
+</div>
+<div class="timeline-item">
+  <span class="timeline-date">纪元389年</span>
+  <div class="timeline-title">首次发现“残响者”存在，开启对升格矩阵的渗透计划</div>
+</div>
+<div class="timeline-item">
+  <span class="timeline-date">纪元412年</span>
+  <div class="timeline-title">启动“归零档案”加密计划，最高机密仅限议会七席知晓</div>
+</div>
     </section>
   </main>
 
