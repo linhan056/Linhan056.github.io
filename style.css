@@ -462,3 +462,17 @@ body {
 .back-to-top:hover {
   opacity: 1;
 }
+.perm-btn {
+  background: transparent;
+  border: 1px solid var(--amber);
+  color: var(--deep-blue);
+  padding: 0.3rem 1rem;
+  font-family: var(--font-mono);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.perm-btn.active {
+  background: var(--amber);
+  color: var(--paper);
+  border-color: var(--deep-blue);
+}

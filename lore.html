@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>真理殿堂 · 世界设定</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* 针对总览页的卡片网格增强 */
+    .lore-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    .lore-card {
+      background: rgba(255, 255, 255, 0.6);
+      border: 1px solid var(--border);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+      color: var(--ink);
+      display: block;
+    }
+    .lore-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px var(--shadow);
+      border-color: var(--amber);
+    }
+    .lore-card h2 {
+      font-family: var(--font-serif);
+      margin-bottom: 1rem;
+      color: var(--deep-blue);
+    }
+    .lore-card p {
+      font-size: 0.95rem;
+      color: var(--gray);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">真理殿堂</a></div>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于</a>
+      <a href="archives.html">探索档案</a>
+      <a href="lore.html">世界设定</a>
+      <a href="join.html">加入</a>
+      <a href="contact.html">访客留言</a>
+    </div>
+  </nav>
+
+  <main class="main-container">
+    <h1 style="font-family: var(--font-serif); margin-bottom: 0.5rem;">世界设定 · 总览</h1>
+    <div style="height: 4px; width: 80px; background: var(--amber); margin-bottom: 2rem;"></div>
+    <p style="max-width: 700px; margin-bottom: 2rem;">奇点界浩瀚无边，真相深埋于每一寸数据流中。以下是我们已探明的世界基础构成。选择一类开始你的探寻。</p>
+
+    <div class="lore-grid">
+      <a href="lore-world.html" class="lore-card">
+        <h2>🌐 奇点界 · 世界结构</h2>
+        <p>三大层级：废墟界 / 稳态界 / 源核界。核心法则：算力即真理。</p>
+      </a>
+      <a href="lore-factions.html" class="lore-card">
+        <h2>⚔️ 七大势力</h2>
+        <p>真理殿堂、升格矩阵、灵修会、守恒者议会、猩红商团、虚无之子、原生民部落。</p>
+      </a>
+      <a href="lore-singularity.html" class="lore-card">
+        <h2>✨ 奇点与技能</h2>
+        <p>奇点的本质、等级、觉醒者、奇点技能——力量与代价。</p>
+      </a>
+      <a href="lore-locations.html" class="lore-card">
+        <h2>📍 重要地点</h2>
+        <p>悖论迷宫、倒悬塔、静默档案馆、同调枢纽……</p>
+      </a>
+      <a href="lore-ruins.html" class="lore-card">
+        <h2>🏛️ 第一文明遗迹</h2>
+        <p>旧世界的墓碑，真相的源头。遗迹等级与传说。</p>
+      </a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>真理殿堂 · 成立于大重启纪元元年</p>
+    <p class="warning">“真相可能刺痛，但谎言终将崩塌。”</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -17,6 +17,7 @@
       <a href="index.html">首页</a>
       <a href="about.html">关于</a>
       <a href="archives.html">探索档案</a>
+      <a href="lore.html">世界设定</a>
       <a href="join.html">加入</a>
       <a href="contact.html">访客留言</a>
     </div>
@@ -31,16 +32,28 @@
       <span class="filter-tag">势力分析</span>
       <span class="filter-tag">旧世界图书馆</span>
     </div>
-
+  
+  <!-- 权限模拟器 -->
+<div style="margin: 1rem 0; padding: 1rem; background: rgba(200,159,104,0.1); border: 1px dashed var(--amber);">
+  <p style="margin-bottom: 0.5rem; font-family: var(--font-mono);">⚙️ 权限模拟器（仅供预览）</p>
+  <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+    <button class="perm-btn" data-perm="0">公开</button>
+    <button class="perm-btn" data-perm="1">一级权限</button>
+    <button class="perm-btn" data-perm="2">二级权限</button>
+    <button class="perm-btn" data-perm="3">三级权限</button>
+    <button class="perm-btn" data-perm="4">核心权限</button>
+  </div>
+  <p style="font-size:0.8rem; margin-top:0.5rem; color:var(--gray);">当前权限级别：<span id="current-perm">公开</span></p>
+</div>
     <div class="archives-grid">
       <!-- 公开档案 -->
-      <div class="archive-card">
+      <div class="archive-card" data-permission="0">
         <div class="archive-meta"><span>遗迹档案</span><span>等级：残响级</span></div>
         <div class="archive-title">倒悬塔</div>
         <div class="archive-desc">重力反向区延伸至第27层，第13层残响显示此处曾为旧世界娱乐场所。</div>
         <div class="archive-permission">权限等级：公开</div>
       </div>
-      <div class="archive-card">
+      <div class="archive-card" data-permission="0">
         <div class="archive-meta"><span>奇点研究</span><span>显奇点级</span></div>
         <div class="archive-title">奇点【绝对理性】</div>
         <div class="archive-desc">目前已追踪到3例觉醒者，共性为情感阈值显著降低。</div>
@@ -48,32 +61,32 @@
       </div>
       
       <!-- 新增公开档案 -->
-<div class="archive-card">
+<div class="archive-card" data-permission="0">
   <div class="archive-meta"><span>遗迹档案</span><span>等级：残响级</span></div>
   <div class="archive-title">数据回响之海·浅层打捞记录</div>
   <div class="archive-desc">打捞出旧世界音乐片段，旋律特征与已知“古典乐”高度相似。</div>
   <div class="archive-permission">权限等级：公开</div>
 </div>
-<div class="archive-card">
+<div class="archive-card" data-permission="0">
   <div class="archive-meta"><span>奇点研究</span><span>微奇点级</span></div>
   <div class="archive-title">奇点【共鸣】的觉醒案例</div>
   <div class="archive-desc">觉醒者与武器产生深度连接，可短暂提升武器性能，但存在精神融合风险。</div>
   <div class="archive-permission">权限等级：公开</div>
 </div>
-<div class="archive-card">
+<div class="archive-card" data-permission="0">
   <div class="archive-meta"><span>旧世界图书馆</span><span>文学类</span></div>
   <div class="archive-title">《1984》残本</div>
   <div class="archive-desc">解析进度37%，文中提及“老大哥在看着你”疑似与监控社会相关。</div>
   <div class="archive-permission">权限等级：公开</div>
 </div>
 <!-- 新增需权限档案（模糊） -->
-<div class="archive-card permission-blur">
+<div class="archive-card permission-blur" data-permission="2">
   <div class="archive-meta"><span>势力分析</span><span>机密</span></div>
   <div class="archive-title">虚无之子“归零仪式”流程推测</div>
   <div class="archive-desc">基于截获的加密信息，推测下一次仪式可能在废墟界某处举行...</div>
   <div class="permission-label">需二级权限</div>
 </div>
-<div class="archive-card permission-blur">
+<div class="archive-card permission-blur" data-permission="3">
   <div class="archive-meta"><span>遗迹档案</span><span>回廊级</span></div>
   <div class="archive-title">创世摇篮外部传感器数据</div>
   <div class="archive-desc">能量波动周期性出现，疑似内部仍有活动...</div>
@@ -81,19 +94,19 @@
 </div>
 
       <!-- 需要权限的档案（模糊效果） -->
-      <div class="archive-card permission-blur">
+      <div class="archive-card permission-blur" data-permission="2">
         <div class="archive-meta"><span>势力分析</span><span>机密</span></div>
         <div class="archive-title">同调枢纽渗透简报</div>
         <div class="archive-desc">确认“残响者”存在。第7号接触者...</div>
         <div class="permission-label">需二级权限</div>
       </div>
-      <div class="archive-card permission-blur">
+      <div class="archive-card permission-blur" data-permission="3">
         <div class="archive-meta"><span>遗迹档案</span><span>回廊级</span></div>
         <div class="archive-title">静默档案馆深层结构</div>
         <div class="archive-desc">据传保存着旧世界所有公开出版物...</div>
         <div class="permission-label">需三级权限</div>
       </div>
-      <div class="archive-card permission-blur">
+      <div class="archive-card permission-blur" data-permission="4">
         <div class="archive-meta"><span>奇点研究</span><span>真·奇点</span></div>
         <div class="archive-title">归零奇点理论溯源</div>
         <div class="archive-desc">关于虚无之子崇拜的终极力量...</div>
@@ -110,5 +123,42 @@
   </footer>
   <script src="script.js"></script>
   <!-- 隐藏信息：访问 archives.html?debug=true 可触发未记录的接口（仅演示） -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const permBtns = document.querySelectorAll('.perm-btn');
+    const permSpan = document.getElementById('current-perm');
+    const cards = document.querySelectorAll('.archive-card');
+
+    // 默认选中“公开”按钮
+    setPermission(0);
+    document.querySelector('.perm-btn[data-perm="0"]').classList.add('active');
+
+    permBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const perm = parseInt(this.dataset.perm, 10);
+        setPermission(perm);
+        // 更新按钮激活状态
+        permBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    function setPermission(level) {
+      // 更新显示文本
+      const names = ['公开', '一级权限', '二级权限', '三级权限', '核心权限'];
+      permSpan.textContent = names[level] || '未知';
+
+      cards.forEach(card => {
+        // 获取卡片所需权限，如果没有设置则默认为0（公开）
+        const needPerm = parseInt(card.dataset.permission || '0', 10);
+        if (needPerm <= level) {
+          card.classList.remove('permission-blur');
+        } else {
+          card.classList.add('permission-blur');
+        }
+      });
+    }
+  });
+</script>
 </body>
 </html>
