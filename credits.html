@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>真理殿堂 · 制作人员</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* 人员卡片网格 */
+    .credits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    .person-card {
+      background: rgba(255, 255, 255, 0.6);
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .person-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px var(--shadow);
+    }
+    .person-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: var(--amber);
+      color: var(--deep-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      font-family: var(--font-serif);
+      margin: 0 auto 1rem auto;
+      border: 3px solid var(--deep-blue);
+    }
+    .person-role {
+      font-family: var(--font-mono);
+      color: var(--amber);
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+    .person-name {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: var(--deep-blue);
+    }
+    .person-desc {
+      font-size: 0.9rem;
+      color: var(--gray);
+    }
+    .thanks {
+      background: rgba(200,159,104,0.1);
+      border-left: 4px solid var(--amber);
+      padding: 1.5rem;
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">真理殿堂</a></div>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于</a>
+      <a href="archives.html">探索档案</a>
+      <a href="lore.html">世界设定</a>
+      <a href="singularities.html">奇点收录</a>
+      <a href="credits.html">制作人员</a>
+      <a href="join.html">加入</a>
+      <a href="contact.html">访客留言</a>
+      <a href="credits.html" style="border-bottom: 2px solid var(--amber);">制作人员</a>
+    </div>
+  </nav>
+
+  <main class="main-container">
+    <h1 style="font-family: var(--font-serif);">制作人员</h1>
+    <div style="height: 4px; width: 80px; background: var(--amber); margin-bottom: 2rem;"></div>
+    
+    <p style="max-width: 700px; margin-bottom: 2rem;">《奇点战争》的世界观与真理殿堂网站，由以下探寻者共同构建。每一位贡献者都怀着对真相的渴望，将碎片化的灵感凝聚成此刻你所见的世界。若你也有兴趣加入，请前往“加入”页或“访客留言”留下你的线索。（ps：请添加作者联系方式）</p>
+
+    <!-- 贡献者列表 -->
+    <div class="credits-grid">
+      <!-- 人物卡片 1：世界观架构 -->
+      <div class="person-card">
+        <div class="person-avatar">🌐</div>
+        <div class="person-role">世界架构师</div>
+        <div class="person-name">探寻者 · 领函</div>
+        <div class="person-desc">构思了奇点界的三大层级、七大势力与碎片区域，奠定了世界的基石。</div>
+      </div>
+      <!-- 人物卡片 2：网站设计/开发 -->
+      <div class="person-card">
+        <div class="person-avatar">⚙️</div>
+        <div class="person-role">技术执掌</div>
+        <div class="person-name">议会 · 技术席—牢d</div>
+        <div class="person-desc">将世界观转化为可交互的网页，实现权限模拟、档案系统与隐藏彩蛋。</div>
+      </div>
+      <!-- 人物卡片 3：内容编写 -->
+      <div class="person-card">
+        <div class="person-avatar">📜</div>
+        <div class="person-role">文献席 · 编纂者</div>
+        <div class="person-name">文献席 · 七—领函，牢d</div>
+        <div class="person-desc">撰写了探索档案、势力介绍、遗迹考据，让世界充满细节与真实感。</div>
+      </div>
+      <!-- 人物卡片 4：灵感与测试 -->
+      <div class="person-card">
+        <div class="person-avatar">💡</div>
+        <div class="person-role">灵感来源</div>
+        <div class="person-name">匿名探寻者</div>
+        <div class="person-desc">提供了奇点技能、武器数据面板等核心设定，并参与早期测试。</div>
+      </div>
+      <!-- 你可以根据需要增加更多卡片，复制上述结构并修改内容即可 -->
+    </div>
+
+    <!-- 特别鸣谢 -->
+    <div class="thanks">
+      <h3 style="font-family: var(--font-serif); margin-top: 0;">特别鸣谢</h3>
+      <p>感谢守恒者议会提供托管支持，猩红商团赞助部分字体资源，以及所有在适能街区留言板留下建议的匿名访客。你们的每一次点击，都是对真相的探寻。</p>
+      <p style="margin-bottom: 0;">—— 真理殿堂 · 传承席 谨上</p>
+    </div>
+
+    <!-- 反馈与联系 -->
+    <div style="text-align: center; margin: 3rem 0;">
+      <p>如果你对本网站或世界观有任何建议，欢迎通过 <a href="contact.html" style="color: var(--amber);">访客留言</a> 告诉我们。</p>
+      <p style="font-family: var(--font-mono); font-size: 0.9rem;">最后更新：奇点历 2471年 · 春</p>
+    </div>
+
+    <!-- 回到顶部 -->
+    <div style="text-align: right; margin: 2rem 0;">
+      <a href="#" class="btn" style="padding: 0.3rem 1rem;">↑ 返回顶部</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>真理殿堂 · 成立于大重启纪元元年</p>
+    <p class="warning">“真相可能刺痛，但谎言终将崩塌。”</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
