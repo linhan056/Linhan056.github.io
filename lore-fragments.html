@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>真理殿堂 · 碎片区域</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* 碎片卡片特殊样式 */
+    .fragment-type {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin: 2rem 0;
+    }
+    .fragment-type > div {
+      flex: 1 1 300px;
+      background: rgba(44,62,80,0.03);
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+    }
+    .fragment-tag {
+      display: inline-block;
+      background: var(--amber);
+      color: var(--deep-blue);
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .level-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .level-item {
+      background: rgba(200,159,104,0.1);
+      border: 1px solid var(--amber);
+      padding: 1rem;
+      text-align: center;
+    }
+    .level-item h4 {
+      font-family: var(--font-serif);
+      margin: 0 0 0.5rem 0;
+      color: var(--deep-blue);
+    }
+    .example-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    .example-list li {
+      background: rgba(44,62,80,0.05);
+      border-left: 3px solid var(--amber);
+      padding: 0.5rem 1rem;
+      flex: 1 1 200px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">真理殿堂</a></div>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于</a>
+      <a href="archives.html">探索档案</a>
+      <a href="lore.html">世界设定</a>
+      <a href="singularities.html">奇点收录</a>
+      <a href="join.html">加入</a>
+      <a href="contact.html">访客留言</a>
+    </div>
+  </nav>
+
+  <main class="main-container">
+    <h1 style="font-family: var(--font-serif);">碎片区域 · 界中界</h1>
+    <div style="height: 4px; width: 80px; background: var(--amber); margin-bottom: 2rem;"></div>
+
+    <p style="font-size: 1.1rem; max-width: 800px;">大重启的爆炸将源核界与废墟界的碎片抛入稳态界，如同信息陨石雨般散落各处。这些“碎片区域”既是世界的伤疤，也是机遇与危险的温床——它们可能是奇点觉醒者的试炼场，也可能是旧世界记忆的博物馆。</p>
+
+    <!-- 成因 -->
+    <section style="margin: 3rem 0;">
+      <h2>碎片成因</h2>
+      <p>在大重启发生的那一刻，源核界与废墟界的部分区域被剧烈的信息冲击撕裂，以“信息陨石”的形式坠入稳态界。大部分碎片在坠落后逐渐与稳态界同化，但那些能量过强或结构特殊的碎片，则保留了下来，形成永久性异常点，被称为“碎片区域”。</p>
+      <p style="margin-top: 1rem;">如今，这些碎片散布在稳态界的各个角落——有的隐藏在繁华街区的角落，有的暴露于荒野之中，成为探险者、拾荒者和各大势力争夺的目标。</p>
+    </section>
+
+    <!-- 两大类型 -->
+    <section style="margin: 3rem 0;">
+      <h2>碎片类型</h2>
+      <div class="fragment-type">
+        <div>
+          <h3 style="font-family: var(--font-serif); color: var(--deep-blue);">✨ 源核碎片</h3>
+          <p><strong>特征</strong>：信息密度极高、现实不稳定的区域。空间扭曲、光影异常，时间流速可能忽快忽慢。意志可以较轻易地扭曲局部现实，是奇点觉醒的理想场所，但也极易迷失自我。</p>
+          <p><strong>危险</strong>：长期接触可能导致精神污染，甚至被碎片同化。可能自然生成微奇点种子，吸引觉醒者争夺。</p>
+          <div style="margin-top: 1rem;">
+            <span class="fragment-tag">泪滴泉</span>
+            <span class="fragment-tag">镜像回廊</span>
+            <span class="fragment-tag">时间沙漏</span>
+            <span class="fragment-tag">永夜街区</span>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-family: var(--font-serif); color: var(--deep-blue);">🏚️ 废墟碎片</h3>
+          <p><strong>特征</strong>：旧世界信息的凝固块。可能是半栋楼、一条街、一个地铁站，突兀地出现在稳态界中。内部保留旧世界的物理法则和记忆残响，建筑和物品可能部分完好。</p>
+          <p><strong>价值</strong>：可能埋藏着旧世界的文物、科技设备甚至奇点种子，是考古学者和拾荒者的天堂。但记忆残响可能诱使进入者沉溺其中，无法自拔。</p>
+          <div style="margin-top: 1rem;">
+            <span class="fragment-tag">书店一角</span>
+            <span class="fragment-tag">地铁站台</span>
+            <span class="fragment-tag">住宅阳台</span>
+            <span class="fragment-tag">倒置的咖啡馆</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 碎片等级 -->
+    <section style="margin: 3rem 0;">
+      <h2>碎片等级</h2>
+      <p>根据规模、危险度和信息浓度，碎片区域可分为以下等级：</p>
+      <div class="level-grid">
+        <div class="level-item">
+          <h4>微碎片</h4>
+          <p>数米至数十米</p>
+          <p>局部异常，如灯光闪烁、轻微重力变化。普通人可接近但略感不适。</p>
+        </div>
+        <div class="level-item">
+          <h4>显碎片</h4>
+          <p>数百米</p>
+          <p>有明显扭曲或残像，需要一定防护才能进入，可能产出微奇点或文物。</p>
+        </div>
+        <div class="level-item">
+          <h4>领域碎片</h4>
+          <p>数公里</p>
+          <p>形成独立的小型生态，法则与外界迥异，内部可能有智慧生物或强大奇点。</p>
+        </div>
+        <div class="level-item">
+          <h4>核心碎片</h4>
+          <p>接近完整区域</p>
+          <p>相当于源核界或废墟界的“飞地”，几乎自成世界，九死一生，但可能触及世界真相。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 著名碎片示例 -->
+    <section style="margin: 3rem 0;">
+      <h2>著名碎片区域</h2>
+      <ul class="example-list">
+        <li><strong>泪滴泉</strong>（源核碎片·显碎片）<br>泉水水质由情绪决定——悲伤时苦涩，愤怒时灼热。据说饮下特定情绪之水可暂时强化对应的奇点技能。</li>
+        <li><strong>镜像回廊</strong>（源核碎片·领域碎片）<br>碎片内复制出进入者的数据分身，必须击败自己才能离开。败者将被分身取代，成为新的“镜像”。</li>
+        <li><strong>时间沙漏</strong>（源核碎片·微碎片）<br>区域内时间流速是外界的十分之一，是修炼或紧急避难的好去处，但出来时外界可能已过数日。</li>
+        <li><strong>书店一角</strong>（废墟碎片·显碎片）<br>半间旧书店，纸质书依然可读，但每本书的内容都在反复重写同一段悲剧故事。有传言说，若读完一本完整的书，就能看到那场悲剧的真相。</li>
+        <li><strong>地铁站台</strong>（废墟碎片·领域碎片）<br>一段完整的地铁站台，每隔一段时间会有一列幻影列车进站。车门打开，里面空无一人，但隐约有说话声传出。有探险者登上列车后永远消失。</li>
+        <li><strong>永夜街区</strong>（源核碎片·核心碎片）<br>永远处于黑夜的街区，原住民的意识体在此游荡。据说街区中央有一座教堂，里面沉睡着真正的“永夜奇点”。</li>
+      </ul>
+    </section>
+
+    <!-- 势力对碎片的利用 -->
+    <section style="margin: 3rem 0;">
+      <h2>碎片与各方势力</h2>
+      <ul>
+        <li><strong>真理殿堂</strong>：在大型废墟碎片周围建立研究站，挖掘旧世界信息。</li>
+        <li><strong>升格矩阵</strong>：试图将源核碎片改造成“微型同调池”，用于局部意识网络扩张。</li>
+        <li><strong>猩红商团</strong>：在碎片区域附近开设临时交易所，收购出土物，甚至组织“碎片探险团”收费带人进入。</li>
+        <li><strong>守恒者议会</strong>：监测所有碎片区域，评估其对稳态界稳定的影响，必要时封锁或消除危险碎片。</li>
+        <li><strong>虚无之子</strong>：试图引爆领域碎片，制造局部“归零”，作为对奇点界的献祭。</li>
+      </ul>
+    </section>
+
+    <!-- 回到顶部 -->
+    <div style="text-align: right; margin: 2rem 0;">
+      <a href="#" class="btn" style="padding: 0.3rem 1rem;">↑ 返回顶部</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>真理殿堂 · 成立于大重启纪元元年</p>
+    <p class="warning">“真相可能刺痛，但谎言终将崩塌。”</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
