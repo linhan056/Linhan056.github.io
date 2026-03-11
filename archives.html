@@ -49,13 +49,14 @@
 </div>
     <div class="archives-grid">
       <!-- 公开档案 -->
-      <div class="archive-card" data-permission="0">
+      <div class="archive-card" data-permission="0" data-archive-id="arc-001">
         <div class="archive-meta"><span>遗迹档案</span><span>等级：残响级</span></div>
         <div class="archive-title">倒悬塔</div>
         <div class="archive-desc">重力反向区延伸至第27层，第13层残响显示此处曾为旧世界娱乐场所。</div>
         <div class="archive-permission">权限等级：公开</div>
+         <button class="view-detail-btn" style="margin-top:1rem;">查看详情</button>
       </div>
-      <div class="archive-card" data-permission="0">
+      <div class="archive-card" data-permission="0" data-archive-id="arc-002">
         <div class="archive-meta"><span>奇点研究</span><span>显奇点级</span></div>
         <div class="archive-title">奇点【绝对理性】</div>
         <div class="archive-desc">目前已追踪到3例觉醒者，共性为情感阈值显著降低。</div>
@@ -63,56 +64,64 @@
       </div>
       
       <!-- 新增公开档案 -->
-<div class="archive-card" data-permission="0">
+<div class="archive-card" data-permission="0" data-archive-id="arc-006">
   <div class="archive-meta"><span>遗迹档案</span><span>等级：残响级</span></div>
   <div class="archive-title">数据回响之海·浅层打捞记录</div>
   <div class="archive-desc">打捞出旧世界音乐片段，旋律特征与已知“古典乐”高度相似。</div>
   <div class="archive-permission">权限等级：公开</div>
+   <button class="view-detail-btn" style="margin-top:1rem;">查看详情</button>
 </div>
-<div class="archive-card" data-permission="0">
+<div class="archive-card" data-permission="0" data-archive-id="arc-007">
   <div class="archive-meta"><span>奇点研究</span><span>微奇点级</span></div>
   <div class="archive-title">奇点【共鸣】的觉醒案例</div>
   <div class="archive-desc">觉醒者与武器产生深度连接，可短暂提升武器性能，但存在精神融合风险。</div>
   <div class="archive-permission">权限等级：公开</div>
+   <button class="view-detail-btn" style="margin-top:1rem;">查看详情</button>
 </div>
-<div class="archive-card" data-permission="0">
+<div class="archive-card" data-permission="0" data-archive-id="arc-008">
   <div class="archive-meta"><span>旧世界图书馆</span><span>文学类</span></div>
   <div class="archive-title">《1984》残本</div>
   <div class="archive-desc">解析进度37%，文中提及“老大哥在看着你”疑似与监控社会相关。</div>
   <div class="archive-permission">权限等级：公开</div>
+   <button class="view-detail-btn" style="margin-top:1rem;">查看详情</button>
 </div>
 <!-- 新增需权限档案（模糊） -->
-<div class="archive-card permission-blur" data-permission="2">
+<div class="archive-card permission-blur" data-permission="2" data-archive-id="arc-009">
   <div class="archive-meta"><span>势力分析</span><span>机密</span></div>
   <div class="archive-title">虚无之子“归零仪式”流程推测</div>
   <div class="archive-desc">基于截获的加密信息，推测下一次仪式可能在废墟界某处举行...</div>
   <div class="permission-label">需二级权限</div>
+   <button class="view-detail-btn" style="margin-top:1rem;">查看详情</button>
 </div>
-<div class="archive-card permission-blur" data-permission="3">
+<div class="archive-card permission-blur" data-permission="3" data-archive-id="arc-010">
   <div class="archive-meta"><span>遗迹档案</span><span>回廊级</span></div>
   <div class="archive-title">创世摇篮外部传感器数据</div>
   <div class="archive-desc">能量波动周期性出现，疑似内部仍有活动...</div>
   <div class="permission-label">需三级权限</div>
+  <button class="view-detail-btn" style="margin-top:1rem;"> View details</button>
 </div>
 
       <!-- 需要权限的档案（模糊效果） -->
-      <div class="archive-card permission-blur" data-permission="2">
+      <div class="archive-card permission-blur" data-permission="2" data-archive-id="arc-003">
         <div class="archive-meta"><span>势力分析</span><span>机密</span></div>
         <div class="archive-title">同调枢纽渗透简报</div>
         <div class="archive-desc">确认“残响者”存在。第7号接触者...</div>
         <div class="permission-label">需二级权限</div>
+         <button class="view-detail-btn" style="margin-top:1rem;">查看详情</button>
       </div>
-      <div class="archive-card permission-blur" data-permission="3">
+      <div class="archive-card permission-blur" data-permission="3" data-archive-id="arc-004">
         <div class="archive-meta"><span>遗迹档案</span><span>回廊级</span></div>
         <div class="archive-title">静默档案馆深层结构</div>
         <div class="archive-desc">据传保存着旧世界所有公开出版物...</div>
         <div class="permission-label">需三级权限</div>
+         <button class="view-detail-btn" style="margin-top:1rem;">查看详情</button>
       </div>
-      <div class="archive-card permission-blur" data-permission="4">
+      <div class="archive-card permission-blur" data-permission="4" data-archive-id="arc-005">
         <div class="archive-meta"><span>奇点研究</span><span>真·奇点</span></div>
         <div class="archive-title">归零奇点理论溯源</div>
         <div class="archive-desc">关于虚无之子崇拜的终极力量...</div>
         <div class="permission-label">需核心权限</div>
+         <button class="view-detail-btn" style="margin-top:1rem;">查看详情</button>
       </div>
     </div>
 
@@ -125,42 +134,103 @@
   </footer>
   <script src="script.js"></script>
   <!-- 隐藏信息：访问 archives.html?debug=true 可触发未记录的接口（仅演示） -->
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  
+<script>
+  (function() {
+    // ---------- 权限模拟器 ----------
     const permBtns = document.querySelectorAll('.perm-btn');
     const permSpan = document.getElementById('current-perm');
     const cards = document.querySelectorAll('.archive-card');
+    const permNames = ['公开', '一级权限', '二级权限', '三级权限', '核心权限'];
+    let currentPerm = 0;
 
-    // 默认选中“公开”按钮
-    setPermission(0);
-    document.querySelector('.perm-btn[data-perm="0"]').classList.add('active');
-
-    permBtns.forEach(btn => {
-      btn.addEventListener('click', function() {
-        const perm = parseInt(this.dataset.perm, 10);
-        setPermission(perm);
-        // 更新按钮激活状态
-        permBtns.forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-      });
-    });
-
-    function setPermission(level) {
-      // 更新显示文本
-      const names = ['公开', '一级权限', '二级权限', '三级权限', '核心权限'];
-      permSpan.textContent = names[level] || '未知';
-
+    function updatePermissionUI() {
+      permSpan.textContent = permNames[currentPerm] || '未知';
       cards.forEach(card => {
-        // 获取卡片所需权限，如果没有设置则默认为0（公开）
         const needPerm = parseInt(card.dataset.permission || '0', 10);
-        if (needPerm <= level) {
+        if (needPerm <= currentPerm) {
           card.classList.remove('permission-blur');
         } else {
           card.classList.add('permission-blur');
         }
       });
     }
-  });
+
+    permBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const perm = parseInt(this.dataset.perm, 10);
+        if (isNaN(perm)) return;
+        currentPerm = perm;
+        permBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        updatePermissionUI();
+      });
+    });
+    // 默认公开
+    document.querySelector('.perm-btn[data-perm="0"]')?.classList.add('active');
+    updatePermissionUI();
+
+    // ---------- 卡片跳转 ----------
+    // 档案ID与详情页文件名的映射
+    const detailPageMap = {
+      'arc-001': 'arc-001.html',
+      'arc-002': 'arc-002.html',
+      'arc-003': 'arc-003.html',
+      'arc-004': 'arc-004.html',
+      'arc-005': 'arc-005.html',
+      'arc-006': 'arc-006.html',
+      'arc-007': 'arc-007.html',
+      'arc-008': 'arc-008.html',
+      'arc-009': 'arc-009.html',
+      'arc-010': 'arc-010.html'
+    };
+
+    // 为每个卡片添加点击事件（点击整个卡片跳转）
+    cards.forEach(card => {
+      card.addEventListener('click', function(e) {
+        // 如果点击的是按钮内部，防止重复触发（按钮也有自己的事件）
+        if (e.target.classList.contains('view-detail-btn')) return;
+
+        const archiveId = this.dataset.archiveId;
+        if (!archiveId) return;
+
+        // 检查权限：卡片所需权限
+        const needPerm = parseInt(this.dataset.permission || '0', 10);
+        if (needPerm > currentPerm) {
+          alert('您的权限不足，无法查看此档案。');
+          return;
+        }
+
+        const targetPage = detailPageMap[archiveId];
+        if (targetPage) {
+          window.location.href = targetPage;
+        } else {
+          alert('档案详情页不存在');
+        }
+      });
+    });
+
+    // 为每个卡片内的“查看详情”按钮添加单独事件（如果有）
+    document.querySelectorAll('.view-detail-btn').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation(); // 防止触发卡片点击
+        const card = this.closest('.archive-card');
+        if (!card) return;
+        const archiveId = card.dataset.archiveId;
+        const needPerm = parseInt(card.dataset.permission || '0', 10);
+        if (needPerm > currentPerm) {
+          alert('您的权限不足，无法查看此档案。');
+          return;
+        }
+        const targetPage = detailPageMap[archiveId];
+        if (targetPage) {
+          window.location.href = targetPage;
+        } else {
+          alert('档案详情页不存在');
+        }
+      });
+    });
+  })();
 </script>
 </body>
 </html>
