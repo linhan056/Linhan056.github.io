@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>真理殿堂 · 物品图鉴</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .items-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .item-card {
+      background: rgba(245,240,225,0.8);
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px var(--shadow);
+      transition: transform 0.2s;
+    }
+    .item-card:hover {
+      transform: translateY(-4px);
+    }
+    .item-name {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      color: var(--deep-blue);
+      border-bottom: 1px dashed var(--amber);
+      padding-bottom: 0.3rem;
+      margin-bottom: 0.8rem;
+    }
+    .item-type {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--gray);
+      margin-bottom: 0.5rem;
+    }
+    .item-desc {
+      font-size: 0.95rem;
+      margin: 1rem 0;
+    }
+    .btn-dongchuan {
+      background: transparent;
+      border: 2px solid var(--amber);
+      color: var(--deep-blue);
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      width: 100%;
+      text-align: center;
+    }
+    .btn-dongchuan:hover {
+      background: var(--amber);
+      color: var(--paper);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">真理殿堂</a></div>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于</a>
+      <a href="archives.html">探索档案</a>
+      <a href="lore.html">世界设定</a>
+      <a href="items.html">物品图鉴</a>
+      <a href="singularities.html">奇点收录</a>
+      <a href="join.html">加入</a>
+      <a href="contact.html">访客留言</a>
+    </div>
+  </nav>
+
+  <main class="main-container">
+    <h1 style="font-family: var(--font-serif);">物品图鉴 · 数据洞穿</h1>
+    <div style="height: 4px; width: 80px; background: var(--amber); margin-bottom: 2rem;"></div>
+    <p>通过【数据洞穿】可解析物品的深层信息。点击按钮查看详情。</p>
+
+    <div class="items-grid">
+      <!-- 武器：共鸣短刀 -->
+      <div class="item-card">
+        <div class="item-name">共鸣短刀</div>
+        <div class="item-type">武器 · 微奇点级</div>
+        <div class="item-desc">一柄能与持有者产生微弱共鸣的短刀，攻击时偶尔会引导使用者的动作。</div>
+        <button class="btn-dongchuan" onclick="window.location.href='item-dagger.html'">🔍 数据洞穿</button>
+      </div>
+
+      <!-- 装备：数据护臂 -->
+      <div class="item-card">
+        <div class="item-name">数据护臂</div>
+        <div class="item-type">防具 · 精良级</div>
+        <div class="item-desc">由压缩数据流编织的护臂，激活后可生成一道持续5秒的能量护盾。</div>
+        <button class="btn-dongchuan" onclick="window.location.href='item-bracer.html'">🔍 数据洞穿</button>
+      </div>
+
+      <!-- 道具：信息空白卡 -->
+      <div class="item-card">
+        <div class="item-name">信息空白卡</div>
+        <div class="item-type">消耗品 · 普通级</div>
+        <div class="item-desc">可抹除一次个人数据痕迹，用于躲避追踪。使用后消失。</div>
+        <button class="btn-dongchuan" onclick="window.location.href='item-card.html'">🔍 数据洞穿</button>
+      </div>
+      
+      <div class="item-card">
+  <div class="item-name">“荒原猎手”重型奇点狙击步枪</div>
+  <div class="item-type">武器 · 显奇点级</div>
+  <div class="item-desc">复刻百年前传奇赏金猎人的奇点技，拥有S+级破坏力，器能“雪与灰烬”可击破显奇点级防御。</div>
+  <button class="btn-dongchuan" onclick="window.location.href='item-sniper.html'">🔍 数据洞穿</button>
+</div>
+
+<div class="item-card">
+  <div class="item-name">轻型奇点全域信息服务终端（LSPIT）</div>
+  <div class="item-type">拓展设备 · 微奇点级</div>
+  <div class="item-desc">守恒者议会开发的黑色手表式终端，可提供地图、奇点监测、算力增幅等全域信息服务。</div>
+  <button class="btn-dongchuan" onclick="window.location.href='item-lspit.html'">🔍 数据洞穿</button>
+</div>
+
+<div class="item-card">
+  <div class="item-name">“远日点”执行记录器</div>
+  <div class="item-type">拓展设备 · 稀有级</div>
+  <div class="item-desc">真理殿堂专为专员设计的任务记录器，4K高清记录+强固追踪，任务结算时可获得额外算核奖励。售价350算核。</div>
+  <button class="btn-dongchuan" onclick="window.location.href='item-recorder.html'">🔍 数据洞穿</button>
+</div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>真理殿堂 · 成立于大重启纪元元年</p>
+    <p class="warning">“真相可能刺痛，但谎言终将崩塌。”</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>轻型奇点全域信息服务终端 · 数据洞穿</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .quality-tag {
+      display: inline-block;
+      padding: 0.2rem 0.8rem;
+      background: var(--amber);
+      color: var(--deep-blue);
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      border-radius: 20px;
+      margin-right: 0.5rem;
+    }
+    .stat-block {
+      background: rgba(44,62,80,0.05);
+      border-left: 4px solid var(--amber);
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    .stat-row {
+      display: flex;
+      margin-bottom: 0.5rem;
+    }
+    .stat-label {
+      width: 120px;
+      font-family: var(--font-mono);
+      color: var(--deep-blue);
+    }
+    .stat-value {
+      flex: 1;
+    }
+    .price {
+      background: var(--deep-blue);
+      color: var(--amber);
+      padding: 0.2rem 1rem;
+      display: inline-block;
+      font-family: var(--font-mono);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">真理殿堂</a></div>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于</a>
+      <a href="archives.html">探索档案</a>
+      <a href="lore.html">世界设定</a>
+      <a href="items.html">物品图鉴</a>
+      <a href="singularities.html">奇点收录</a>
+      <a href="join.html">加入</a>
+      <a href="contact.html">访客留言</a>
+    </div>
+  </nav>
+
+  <main class="main-container">
+    <h1 style="font-family: var(--font-serif);">轻型奇点全域信息服务终端（LSPIT） · 数据洞穿</h1>
+    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+      <span class="quality-tag" style="background: #c89f68;">微奇点级</span>
+      <span class="quality-tag" style="background: #c89f68;">拓展设备</span>
+    </div>
+
+    <div class="stat-block">
+      <div class="stat-row">
+        <span class="stat-label">攻击力：</span>
+        <span class="stat-value">无</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">防御力：</span>
+        <span class="stat-value">B (40)（小盾展开时）</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">重量：</span>
+        <span class="stat-value">轻</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">算力增幅：</span>
+        <span class="stat-value">+50 算力上限</span>
+      </div>
+    </div>
+
+    <h3>效果特性</h3>
+    <ul>
+      <li><strong>自主防御系统</strong>：检测到攻击时，自动在身前展开一面数据护盾，防御力B级，持续5秒。</li>
+      <li><strong>奇点监测</strong>：分析周遭能量波动，监测附近是否有奇点或觉醒者存在；实时监测自身奇点状态。</li>
+      <li><strong>算力增幅</strong>：持有者增加算力上限50点（永久有效）。</li>
+    </ul>
+
+    <h3>器能 · 全域信息服务</h3>
+    <ul>
+      <li>查看绝大部分稳态界、废墟界地区地图（实时更新）。</li>
+      <li>访问世界公开信息库中的奇点资料与AI分析摘要。</li>
+      <li>监测持有者生理活动数据（心率、精神力波动）。</li>
+      <li>追踪晨昏线动向，分析异常天象与数据潮汐。</li>
+      <li>更多功能可随固件更新解锁。</li>
+    </ul>
+
+    <h3>溯源残相</h3>
+    <p>守恒者议会科技部为奇点使用者研发的轻型辅助设备，外观为一块简洁的黑色手表。它能调取奇点界的地脉信息、天气、奇点分布，为佩戴者提供近乎全知的战场感知。</p>
+
+    <h3>共鸣契合度</h3>
+    <p>无共鸣要求，任何觉醒者均可佩戴使用。</p>
+
+    <h3>负载阈值</h3>
+    <p>基础负载：5%；激活自主防御时额外增加10%负载。</p>
+
+    <h3>成长脉络</h3>
+    <p>自身不可进化，但可通过安装升级插件（如高精度扫描模块、加密通讯芯片）获得更多功能。</p>
+
+    <h3>来源</h3>
+    <p><strong>商店购买</strong>（衡科商区拓展设备区，守恒者议会交易行） · 价格 <span class="price">200 算核</span><br>
+    <strong>其他来源</strong>：守恒者议会内部配给。</p>
+    <p style="font-size:0.9rem; color:var(--gray);">※ 1算核 = 20点算力上限（永久兑换）</p>
+
+    <p><a href="items.html">← 返回物品图鉴</a></p>
+  </main>
+
+  <footer class="footer">
+    <p>真理殿堂 · 成立于大重启纪元元年</p>
+    <p class="warning">“真相可能刺痛，但谎言终将崩塌。”</p>
+  </footer>
+</body>
+</html>
