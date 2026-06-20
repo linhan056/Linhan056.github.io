@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>真理殿堂 · 奇点：集合论</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .detail-container { max-width: 800px; margin: 0 auto; }
+    .back-link { display: inline-block; margin-bottom: 2rem; color: var(--deep-blue); text-decoration: none; border-bottom: 1px dashed var(--amber); }
+    .back-link:hover { color: var(--amber); }
+    .detail-section { margin: 2rem 0; padding: 1.5rem; background: rgba(255,255,255,0.3); border-left: 4px solid var(--amber); }
+    .detail-section h2 { font-family: var(--font-serif); font-size: 1.5rem; margin-top: 0; margin-bottom: 1rem; color: var(--deep-blue); }
+    .detail-meta { display: flex; gap: 1rem; margin-bottom: 1.5rem; font-family: var(--font-mono); color: var(--gray); }
+    .risk-tag { background: rgba(200,100,100,0.1); color: #a00; border: 1px solid #a00; padding: 0.2rem 0.5rem; border-radius: 2px; font-size: 0.8rem; }
+    .combo-tag { background: rgba(100,150,200,0.1); color: #1a5276; border: 1px solid #1a5276; padding: 0.2rem 0.5rem; border-radius: 2px; font-size: 0.8rem; }
+    .stat-block {
+      background: rgba(44,62,80,0.05);
+      border-left: 4px solid var(--amber);
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    .stat-row {
+      display: flex;
+      margin-bottom: 0.5rem;
+    }
+    .stat-label {
+      width: 120px;
+      font-family: var(--font-mono);
+      color: var(--deep-blue);
+    }
+    .stat-value {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">真理殿堂</a></div>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于</a>
+      <a href="archives.html">探索档案</a>
+      <a href="singularities.html">奇点收录</a>
+      <a href="items.html">物品图鉴</a>
+      <a href="lore.html">世界设定</a>
+      <a href="credits.html">制作人员</a>
+      <a href="join.html">加入</a>
+      <a href="contact.html">访客留言</a>
+    </div>
+  </nav>
+
+  <main class="main-container detail-container">
+    <a href="singularities.html" class="back-link">← 返回奇点收录</a>
+
+    <h1 style="font-family: var(--font-serif);">集合论</h1>
+    <div class="detail-meta">
+      <span>显奇点级</span>
+      <span>发现时间：奇点历 2401 年</span>
+      <span>收录编号：S-004</span>
+    </div>
+
+    <div class="detail-section">
+      <h2>基本描述</h2>
+      <p>觉醒者获得了一种对现实进行“集合化”认知的能力。在他的感知中，世界上的一切——物体、生命、能量、甚至概念——都可以被抽象为<strong>元素</strong>，并归类到不同的<strong>集合</strong>中。通过操纵集合间的运算（并集、交集、补集、子集等），觉醒者可以扭曲元素之间的归属关系，从而改变现实。</p>
+      <p>这种能力不依赖高额的算力输出或直接的攻击力加成，而是通过<strong>逻辑规则</strong>来重新定义“什么是连在一起的”“什么属于什么”“什么被排除在外”。用得巧妙，可以四两拨千斤；用得拙劣，则几乎毫无作用。</p>
+      <p style="margin-top: 1rem; font-style: italic; color: var(--gray);">“万物皆可分类，分类即是权力。” —— 首位觉醒者“分类者”的笔记</p>
+    </div>
+
+    <div class="detail-section">
+      <h2>效果特性</h2>
+      <div class="stat-block">
+        <div class="stat-row"><span class="stat-label">标记上限：</span><span class="stat-value">5 个元素（初始），可随熟练度提升</span></div>
+        <div class="stat-row"><span class="stat-label">运算类型：</span><span class="stat-value">并集、交集、补集、子集、幂集</span></div>
+        <div class="stat-row"><span class="stat-label">消耗方式：</span><span class="stat-value">算力 + 精神负担</span></div>
+      </div>
+
+      <h3 style="font-family: var(--font-serif); margin-top: 1.5rem;">集合运算表</h3>
+      <table style="width:100%; border-collapse: collapse; margin: 1rem 0; font-size:0.9rem;">
+        <tr style="background:var(--amber); color:var(--deep-blue);">
+          <th style="padding:0.5rem; border:1px solid var(--border);">运算</th>
+          <th style="padding:0.5rem; border:1px solid var(--border);">效果</th>
+          <th style="padding:0.5rem; border:1px solid var(--border);">消耗</th>
+          <th style="padding:0.5rem; border:1px solid var(--border);">冷却</th>
+        </tr>
+        <tr>
+          <td style="padding:0.5rem; border:1px solid var(--border);"><strong>并集 (∪)</strong></td>
+          <td style="padding:0.5rem; border:1px solid var(--border);">合并两个集合，元素被视为“同一实体”。攻击一个，伤害平均分摊；或与物体并集获得属性。</td>
+          <td style="padding:0.5rem; border:1px solid var(--border);">中等</td>
+          <td style="padding:0.5rem; border:1px solid var(--border);">30s</td>
+        </tr>
+        <tr>
+          <td style="padding:0.5rem; border:1px solid var(--border);"><strong>交集 (∩)</strong></td>
+          <td style="padding:0.5rem; border:1px solid var(--border);">取共同元素或交换共同属性。如将敌人弱点与友方抗性交换，或使两物体空间重合。</td>
+          <td style="padding:0.5rem; border:1px solid var(--border);">中等</td>
+          <td style="padding:0.5rem; border:1px solid var(--border);">45s</td>
+        </tr>
+        <tr>
+          <td style="padding:0.5rem; border:1px solid var(--border);"><strong>补集 (ᶜ)</strong></td>
+          <td style="padding:0.5rem; border:1px solid var(--border);">从集合中排除元素，使其暂时不属于原类别。如隐身、悬浮、短时间无敌（但无法攻击）。</td>
+          <td style="padding:0.5rem; border:1px solid var(--border);">高</td>
+          <td style="padding:0.5rem; border:1px solid var(--border);">60s</td>
+        </tr>
+        <tr>
+          <td style="padding:0.5rem; border:1px solid var(--border);"><strong>子集 (⊆)</strong></td>
+          <td style="padding:0.5rem; border:1px solid var(--border);">将元素定义为另一个元素的子集。如强制敌人攻击指定目标，或强制吸收队友增益。</td>
+          <td style="padding:0.5rem; border:1px solid var(--border);">低</td>
+          <td style="padding:0.5rem; border:1px solid var(--border);">20s</td>
+        </tr>
+        <tr>
+          <td style="padding:0.5rem; border:1px solid var(--border);"><strong>幂集 (ℙ)</strong></td>
+          <td style="padding:0.5rem; border:1px solid var(--border);">创建所有子集组合，使目标陷入“多重可能”状态（如分身效果）。消耗极高，负载巨大。</td>
+          <td style="padding:0.5rem; border:1px solid var(--border);">极高</td>
+          <td style="padding:0.5rem; border:1px solid var(--border);">120s</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="detail-section">
+      <h2>觉醒者案例</h2>
+      <p><strong>代号“分类者”</strong></p>
+      <ul style="padding-left: 1.5rem;">
+        <li><strong>身份</strong>：原真理殿堂解析席研究员，专攻旧世界数学典籍。</li>
+        <li><strong>觉醒经过</strong>：在解析倒悬塔第13层出土的一块刻满集合论公式的石板时，突然理解“万物皆为集合”，奇点觉醒。</li>
+        <li><strong>当前状态</strong>：活跃，常驻适能街区旧书店，与“老书虫”合作，为探寻者提供战术分析。</li>
+        <li><strong>战斗风格</strong>：从不直接攻击，而是通过重新定义战场规则，让敌人自缚手脚。曾在一场遭遇战中，将三名升格矩阵同调者分别定义为“互为补集”，使他们无法同时行动，轻松制服。</li>
+      </ul>
+    </div>
+
+    <div class="detail-section">
+      <h2>风险与代价</h2>
+      <p><span class="risk-tag">认知负担</span> <span class="risk-tag">运算崩溃</span> <span class="risk-tag">规则反噬</span></p>
+      <ul style="padding-left: 1.5rem;">
+        <li><strong>认知负担</strong>：长时间将世界视为集合，会导致觉醒者逐渐失去对“具体事物”的感知。严重时丧失情感，需定期“具象化训练”。</li>
+        <li><strong>运算崩溃</strong>：同时标记过多元素或执行复杂运算（如幂集）可能导致精神过载，轻则算力透支，重则暂时失去奇点能力。</li>
+        <li><strong>规则反噬</strong>：若定义的集合逻辑存在矛盾（如同一元素同时归入“有生命”和“无生命”），可能引发局部现实扭曲反噬自身，造成混乱。</li>
+      </ul>
+    </div>
+
+    <div class="detail-section">
+      <h2>进化方向 · 领域奇点级</h2>
+      <ul style="padding-left: 1.5rem;">
+        <li><strong>抽象化领域</strong>：在领域内（半径约30米），觉醒者可任意定义新的集合规则，甚至创造“空集”使事物暂时消失。</li>
+        <li><strong>数学化身</strong>：将自身转化为一个“集合概念”，免疫大部分物理攻击，并可以瞬间并集到任何元素上（瞬移）。</li>
+      </ul>
+    </div>
+
+    <div class="detail-section">
+      <h2>克制与配合</h2>
+      <p><span class="combo-tag">克制</span> 依赖单一属性或数值碾压的敌人（如纯攻击型觉醒者）容易被集合论玩弄；而同样具备逻辑能力的敌人（如【绝对理性】觉醒者）可以反制。</p>
+      <p><span class="combo-tag">配合</span> 与【绝对理性】搭配，可进行精准的战术推演；与【坐标系】搭配，可实现复杂的空间与逻辑双重操作。</p>
+    </div>
+
+    <div class="detail-section">
+      <h2>获取方式</h2>
+      <ul style="padding-left: 1.5rem;">
+        <li><strong>自然觉醒</strong>：极端罕见，通常需要长期接触旧世界数学文献或在悖论迷宫深层解答逻辑谜题。</li>
+        <li><strong>遗迹获取</strong>：倒悬塔第13层出土的石板是关键触发物，但石板已失窃（疑似流入猩红商团）。</li>
+        <li><strong>传承</strong>：据传“分类者”愿意指导有数学天赋的探寻者，但需要先解出他出的一道集合论谜题。</li>
+      </ul>
+    </div>
+
+    <p style="margin-top: 2rem; text-align: right;">—— 档案最后更新：奇点历 2471 年 · 解析席</p>
+  </main>
+
+  <footer class="footer">
+    <p>真理殿堂 · 成立于奇点历元年</p>
+    <p class="warning">“真相可能刺痛，但谎言终将崩塌。”</p>
+  </footer>
+  <a href="#" class="back-to-top">↑</a>
+  <script src="script.js"></script>
+</body>
+</html>
